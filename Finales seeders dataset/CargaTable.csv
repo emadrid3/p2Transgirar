@@ -1,0 +1,8 @@
+id;tipoCarga
+1;Importacion
+2;Exportacion
+3;Vacio
+4;Contenedor vacio
+5;Carga suelta
+6;Consolidado
+7;DTA

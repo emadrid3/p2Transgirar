@@ -1,0 +1,116 @@
+$color-dark: #1d1f1f;
+
+.login-view {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6.5fr 3.5fr;
+    &__img {
+        background-image: url("/img/unnamed.jpg");
+        min-height: 100vh;
+        background-position: center center;
+        background-size: cover;
+    }
+    &__form {
+        width: 100%;
+        padding: 0% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+%flex-start {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+%login-input {
+    outline: none;
+    padding: 10px 15px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+}
+.form-login-view {
+    width: 100%;
+}
+.coral-icon {
+    @extend %flex-start;
+    margin-bottom: 20px;
+}
+.form-title {
+    color: $color-dark;
+    font-weight: bolder;
+    @extend %flex-start;
+}
+.form-paragraph {
+    width: 100%;
+    color: #838383;
+    font-size: 14px;
+    @extend %flex-start;
+}
+.login-form{
+    width: 100%;
+    @extend %flex-start;
+    flex-direction: column;
+}
+.username-input {
+    @extend %flex-start;
+    flex-direction: column;
+    &__label {
+      font-size: 14px;
+      color: $color-dark;
+      @extend %flex-start;
+    }
+    &__tag {
+      font-size: 14px;
+      color: $color-dark;
+      @extend %login-input;
+    }
+}
+
+.password-input {
+    margin-top: 25px;
+    @extend %flex-start;
+    flex-direction: column;
+    &__label {
+      font-size: 14px;
+      color: $color-dark;
+      @extend %flex-start;
+    }
+    &__tag {
+      font-size: 14px;
+      color: $color-dark;
+      @extend %login-input;
+    }
+}
+.remember {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    &__checkbox {
+      font-size: 14px;
+      color: $color-dark;
+    }
+    &__button {
+      font-size: 14px;
+      color: #0846a6 !important;
+    }
+}
+.submit {
+    width: 100%;
+    margin-top: 30px;
+    &__button {
+      background-color: #00AB00;
+      color: white;
+  
+      &:hover{
+          background-color: #007900;
+      }
+    }
+}
