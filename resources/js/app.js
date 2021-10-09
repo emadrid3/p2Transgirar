@@ -44,7 +44,6 @@ Vue.use(ElementUI, { locale });
  Vue.component('view-drivers', require('./components/drivers/viewDrivers.vue').default);
  Vue.component('view-manage-drivers', require('./components/drivers/viewManageDrivers.vue').default);
 
- Vue.component('currency-input', require('./components/formatMoney/formatMoney.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
